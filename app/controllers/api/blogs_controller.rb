@@ -1,4 +1,7 @@
 class Api::BlogsController < ApplicationController
+  def index
+    render json: Blog.all
+  end
   def create
     @blog = Blog.new(blog_params)
     if @blog.save
@@ -24,5 +27,5 @@ class Api::BlogsController < ApplicationController
       params.require(:blog).permit(
         :name)
     end
-end
+  
 end

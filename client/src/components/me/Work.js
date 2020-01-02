@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Work = () => (
-  <>
+  <div className="side">
     
-      <h1>Work</h1>
-  </>
+      <h1>Contact</h1>
+  </div>
 
 )
 
